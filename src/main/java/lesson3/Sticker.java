@@ -48,6 +48,6 @@ public class Sticker {
                 "cutCountour - " + cutCountour + "\n" +
                 "glueBrand - " + glueBrand + "\n" +
                 "laminationBrand - " + laminationBrand);
-
+        System.out.println("********************");
     }
 }
