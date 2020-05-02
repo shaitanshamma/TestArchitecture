@@ -30,4 +30,10 @@ public class Brand {
             orphanRemoval = true,
             cascade = CascadeType.ALL)
     private List<Glue> glues;
+
+    @OneToMany(
+            mappedBy = "brand",
+            orphanRemoval = true,
+            cascade = CascadeType.ALL)
+    private List<LaminationFilm> laminationFilms;
 }
