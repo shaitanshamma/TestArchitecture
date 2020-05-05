@@ -16,17 +16,9 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(securedEnabled = true)
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
-//
-//    private ClientService clientService;
-//
-//    @Autowired
-//    public void setUserService(ClientService clientService) {
-//        this.clientService = clientService;
-//    }
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) {
-//        auth.authenticationProvider(authenticationProvider());
     }
 
     @Override
@@ -50,17 +42,4 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return new BCryptPasswordEncoder();
     }
 
-//    @Bean
-//    public DaoAuthenticationProvider authenticationProvider() {
-//        DaoAuthenticationProvider auth = new DaoAuthenticationProvider();
-//        auth.setUserDetailsService();
-//        auth.setPasswordEncoder(passwordEncoder());
-//        return auth;
-//    }
-
-//    @Bean
-//    public ClientService clientService(ClientRepository clientRepository, RoleRepository roleRepository,
-//                                       BCryptPasswordEncoder passwordEncoder) {
-//        return new ClientServiceImpl(clientRepository, roleRepository, passwordEncoder);
-//    }
 }
