@@ -27,5 +27,6 @@ public class LaminationFilm {
     private double length;
 
     @ManyToOne(optional = false)
+    @JoinColumn(name = "brand_id")
     private Brand brand;
 }
